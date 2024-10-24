@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngoding Aja - Learn Coding Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/courses.css">
+</head>
+<body class="bg-white">
+
+    <div id="ad-bar" class="bg-yellow-500 p-4 text-white text-center relative slide-up">
+        <div class="text-sm">
+            Future-ready courses start at <span class="font-bold">RP 16.000,00</span>
+        </div>
+        <div class="text-lg font-bold">
+            1 day left!
+        </div>
+        <button onclick="closeAd()" class="absolute top-0 right-0 m-2 text-white font-bold text-lg">✕</button>
+    </div>
+
+    <nav class="bg-whitetext-white px-2 py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="../index.html" class="text-2xl font-bold">Ngoding Aja</a>
+                <a href="categories.html" class="hover:text-blue-600">Categories</a>
+            </div>
+
+            <div class="flex-grow mx-4">
+                <input type="text" placeholder="Search for anything" class="w-full p-2 border rounded-lg">
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <a href="../pages/courses.html" class="hover:text-blue-600">Courses</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="cart.html" class="hover:text-blue-600">🛒</a>
+                <a href="login.html" class="border border-black text-black px-4 py-2 hover:bg-black hover:text-white">Login</a>
+                <a href="signup.html" class="bg-black text-white px-4 py-2 border border-black hover:bg-white hover:text-black">Sign up</a>
+                <a href="contact.html" class="ml-2 hover:text-blue-600">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-gray-100 py-4 shadow-md">
+        <div class="container mx-auto flex space-x-6">
+            <button onclick="loadCategory('Web Development')" class="tab tab-active">Web Development</button>
+            <button onclick="loadCategory('Data Science')" class="tab tab-inactive">Data Science</button>
+            <button onclick="loadCategory('Mobile Development')" class="tab tab-inactive">Mobile Development</button>
+            <button onclick="loadCategory('DevOps')" class="tab tab-inactive">DevOps</button>
+        </div>
+    </section>
+
+
+    <main class="container mx-auto py-12">
+        <section id="category-content">
+          <h1 class="text-4xl font-bold" id="category-title">Web Development Courses</h1>
+          <p class="mt-4">Courses to get you started</p>
+          <p class="text-sm text-gray-500 mt-2">Explore courses from experienced, real-world experts.</p>
+        </section>
+      
+        <section class="my-8">
+            <div class="flex space-x-6">
+                <button onclick="loadCourses('Most Popular')" class="secondary-tab secondary-tab-active">Most Popular</button>
+                <button onclick="loadCourses('New')" class="secondary-tab secondary-tab-inactive">New</button>
+                <button onclick="loadCourses('Trending')" class="secondary-tab secondary-tab-inactive">Trending</button>
+            </div>
+        </section>
+
+      
+        <section id="courses-section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-x-auto">
+
+        </section>
+      </main>
+      
+
+    <script src="../scripts/courses.js"></script>
+
+</body>
+</html>

@@ -31,14 +31,6 @@ color: black;
     padding: 1rem;
     gap: 1.5rem;
   }
-.course-card {
-    flex-shrink: 0;
-    width: 16rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-  }
   .secondary-tab-active {
     font-weight: bold; 
     border-bottom: 3px solid black; 
@@ -48,4 +40,21 @@ color: black;
     font-weight: normal;
     border-bottom: none; 
   }
+
+  .course-card {
+    position: relative;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 250px;
+}
+.add-to-cart-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
   

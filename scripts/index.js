@@ -62,7 +62,7 @@ const courses = [
     price: 120000,
     originalPrice: 180000,
     bestseller: true,
-    image: "javascript-essentials.jpg",
+    image: "assets/javascriptcourse.jpeg",
   },
   {
     title: "Python for Data Science",
@@ -72,7 +72,7 @@ const courses = [
     price: 220000,
     originalPrice: 280000,
     bestseller: true,
-    image: "python-data-science.jpg",
+    image: "assets/python-data-science.jpeg",
   },
   {
     title: "React Native Bootcamp",
@@ -82,7 +82,7 @@ const courses = [
     price: 140000,
     originalPrice: 190000,
     bestseller: false,
-    image: "react-native-bootcamp.jpg",
+    image: "assets/react-native-bootcamp.jpeg",
   },
   {
     title: "Complete Web Development",
@@ -92,7 +92,7 @@ const courses = [
     price: 250000,
     originalPrice: 350000,
     bestseller: true,
-    image: "web-development.jpg",
+    image: "assets/web-development.png",
   },
   {
     title: "Machine Learning with TensorFlow",
@@ -102,7 +102,7 @@ const courses = [
     price: 300000,
     originalPrice: 400000,
     bestseller: false,
-    image: "ml-tensorflow.jpg",
+    image: "assets/ml-tensorflow.jpeg",
   },
   {
     title: "Advanced CSS and Sass",
@@ -112,7 +112,7 @@ const courses = [
     price: 100000,
     originalPrice: 160000,
     bestseller: false,
-    image: "css-sass.jpg",
+    image: "assets/css-sass.jpeg",
   },
   {
     title: "AWS Cloud Practitioner",
@@ -122,7 +122,7 @@ const courses = [
     price: 210000,
     originalPrice: 270000,
     bestseller: true,
-    image: "aws-cloud-practitioner.jpg",
+    image: "assets/aws-cloud-practitioner.png",
   },
   {
     title: "Docker for DevOps",
@@ -132,7 +132,7 @@ const courses = [
     price: 150000,
     originalPrice: 200000,
     bestseller: false,
-    image: "docker-devops.jpg",
+    image: "assets/docker-devops.jpeg",
   },
   {
     title: "Flutter App Development",
@@ -142,7 +142,7 @@ const courses = [
     price: 180000,
     originalPrice: 240000,
     bestseller: false,
-    image: "flutter-app.jpg",
+    image: "assets/flutter-app.jpeg",
   },
 ];
 
@@ -154,7 +154,7 @@ function renderCourses() {
             <div class="w-64 flex-shrink-0 p-4">
                 <img src="${course.image}" alt="${
       course.title
-    }" class="w-full h-20 object-cover rounded-lg">
+    }" class="w-full h-28 object-cover rounded-lg">
                 <h4 class="text-lg font-bold mt-2">${course.title}</h4>
                 <p class="text-sm text-gray-500">${course.instructor}</p>
                 <div class="flex items-center mt-2">

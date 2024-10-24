@@ -24,7 +24,7 @@ function loadCart() {
     totalPrice += course.price;
 
     const courseCard = `
-              <div class="course-card bg-white p-4 rounded-lg shadow-lg relative">
+              <div class="course-card bg-white p-4 rounded-lg shadow-lg relative w-[250px]">
                   <img src="${course.image}" alt="${
       course.title
     }" class="w-full h-40 object-cover rounded-lg">
@@ -45,7 +45,7 @@ function loadCart() {
                           <span class="line-through text-sm text-gray-500">Rp ${course.originalPrice.toLocaleString()}</span>
                       </div>
                   </div>
-                  <button class="absolute top-2 right-2 bg-red-500 text-white rounded-full p-2" onclick="removeFromCart(${index})">
+                  <button class="absolute top-2 right-4 text-white rounded-full p-2" onclick="removeFromCart(${index})">
                       ✕
                   </button>
               </div>

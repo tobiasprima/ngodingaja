@@ -24,7 +24,7 @@ function loadCheckout() {
     totalPrice += course.price;
 
     const courseCard = `
-        <div class="course-card bg-white p-4 rounded-lg shadow-lg relative">
+        <div class="course-card bg-white p-4 w-[250px] rounded-lg shadow-lg relative">
           <img src="${course.image}" alt="${
       course.title
     }" class="w-full h-40 object-cover rounded-lg">

@@ -297,10 +297,14 @@ function loadCourses(filter) {
 
   filteredCourses.forEach((course) => {
     const courseCard = `
-           <div class="course-card bg-white p-4 rounded-lg shadow-lg relative">
+             <div class="course-card bg-white p-4 rounded-lg shadow-lg relative">
     <img src="cart-icon.png" alt="Add to Cart" onclick="addToCart('${
       course.title
-    }', ${course.price}, this)" class="add-to-cart-icon absolute top-2 right-2">
+    }', ${course.price}, '${course.image}', '${course.instructor}', ${
+      course.rating
+    }, ${course.reviews}, ${
+      course.originalPrice
+    }, this)" class="add-to-cart-icon absolute top-2 right-2">
     <div>
       <img src="${course.image}" alt="${
       course.title
@@ -336,7 +340,16 @@ function loadCourses(filter) {
   activeSecondaryTab.classList.add("secondary-tab-active");
 }
 
-function addToCart(title, price, element) {
+function addToCart(
+  title,
+  price,
+  image,
+  instructor,
+  rating,
+  reviews,
+  originalPrice,
+  element
+) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   const existingCourse = cart.find((course) => course.title === title);
@@ -344,7 +357,15 @@ function addToCart(title, price, element) {
   if (existingCourse) {
     alert(`${title} is already in your cart!`);
   } else {
-    const newCourse = { title, price };
+    const newCourse = {
+      title,
+      price,
+      image,
+      instructor,
+      rating,
+      reviews,
+      originalPrice,
+    };
     cart.push(newCourse);
     localStorage.setItem("cart", JSON.stringify(cart));
 

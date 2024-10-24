@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngoding Aja - Learn Coding Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/cart.css">
+</head>
+<body class="bg-white">
+
+    <nav class="bg-whitetext-white px-2 py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="../index.html" class="text-2xl font-bold">Ngoding Aja</a>
+                <a href="categories.html" class="hover:text-blue-600">Categories</a>
+            </div>
+
+            <div class="flex-grow mx-4">
+                <input type="text" placeholder="Search for anything" class="w-full p-2 border rounded-lg">
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <a href="courses.html" class="hover:text-blue-600">Courses</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="cart.html" class="hover:text-blue-600">🛒</a>
+                <a href="login.html" class="border border-black text-black px-4 py-2 hover:bg-black hover:text-white">Login</a>
+                <a href="signup.html" class="bg-black text-white px-4 py-2 border border-black hover:bg-white hover:text-black">Sign up</a>
+                <a href="contact.html" class="ml-2 hover:text-blue-600">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto py-12">
+        <h1 class="text-4xl font-bold">Your Cart</h1>
+        <p class="mt-4 text-gray-500">Here are the courses you've added to your cart.</p>
+
+        <div id="cart-section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+        </div>
+
+        <div id="cart-empty" class="text-center mt-8 hidden">
+            <h3 class="text-2xl">Your cart is empty!</h3>
+            <a href="courses.html" class="text-blue-600 font-bold text-lg underline">Browse courses</a>
+        </div>
+
+        <div id="cart-summary" class="mt-12 text-right hidden">
+            <h3 class="text-xl font-bold">Total: Rp <span id="cart-total">0</span></h3>
+            <a href="checkout.html" class="inline-block mt-4 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Proceed to Checkout</a>
+        </div>
+    </main>
+      
+
+    <script src="../scripts/cart.js"></script>
+
+</body>
+</html>

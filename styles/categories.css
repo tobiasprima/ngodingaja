@@ -1,8 +1,14 @@
-html{
+html, body {
     height: 100%;
+    margin: 0;
 }
-body{
-    height: 100%;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex:1;
 }
 .slide-up {
     transition: transform 0.3s ease-out;
